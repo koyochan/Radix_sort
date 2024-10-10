@@ -6,16 +6,11 @@
 /*   By: kotkobay <kotkobay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/13 20:28:21 by kotkobay          #+#    #+#             */
-/*   Updated: 2024/10/09 19:17:05 by kotkobay         ###   ########.fr       */
+/*   Updated: 2024/10/10 16:22:27 by kotkobay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/push_swap.h"
-
-// __attribute__((destructor)) static void destructor()
-// {
-// 	system("leaks -q push_swap");
-// }
 
 void	free_with_message(t_stacks *s, char *msg)
 {
@@ -126,8 +121,10 @@ int	main(int argc, char **argv)
 	t_stacks	*s;
 	char		*input;
 	char		**new_argv;
+	int			i;
 
 	input = NULL;
+	i = 0;
 	s = NULL;
 	if (argc == 1)
 	{
@@ -145,9 +142,10 @@ int	main(int argc, char **argv)
 			free_with_message(NULL, "Error\n");
 			return (1);
 		}
-		for (int i = 0; i < argc; i++)
+		while (i < argc)
 		{
 			new_argv[i] = argv[i];
+			i++;
 		}
 		new_argv[argc] = input;
 		argc++;
