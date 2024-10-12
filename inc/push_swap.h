@@ -6,7 +6,7 @@
 /*   By: kotkobay <kotkobay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/13 20:29:38 by kotkobay          #+#    #+#             */
-/*   Updated: 2024/10/10 16:23:12 by kotkobay         ###   ########.fr       */
+/*   Updated: 2024/10/12 12:49:18 by kotkobay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,5 +45,10 @@ void		free_with_message(t_stacks *s, char *msg);
 void		sort_is_duplicated(t_stacks *s, int i);
 int			is_array_sorted(t_stacks *s);
 int			ft_atol(const char *n, t_stacks *s);
+t_stacks	*initialize_stack_and_args(int argc, char **argv);
+void		join_args(int argc, char **argv, t_stacks *s);
+void		validate_arguments(int argc, char **argv);
+int			is_invalid_sign(char current, char next);
+int			is_invalid_sign(char current, char next);
 
 #endif

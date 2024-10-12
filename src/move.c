@@ -6,7 +6,7 @@
 /*   By: kotkobay <kotkobay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/13 20:28:37 by kotkobay          #+#    #+#             */
-/*   Updated: 2023/12/13 20:28:38 by kotkobay         ###   ########.fr       */
+/*   Updated: 2024/10/11 19:30:32 by kotkobay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,4 +74,22 @@ void	rotate(int *array, int size, char *direction, char *list)
 		write(1, "rr", 2);
 	}
 	ft_putendl_fd(list, 1);
+}
+
+void	free_with_message(t_stacks *s, char *msg)
+{
+	if (msg)
+		write(2, msg, ft_strlen(msg));
+	if (s != NULL)
+	{
+		if (s->a != NULL)
+			free(s->a);
+		if (s->b != NULL)
+			free(s->b);
+		if (s->join_args != NULL)
+			free(s->join_args);
+		if (s != NULL)
+			free(s);
+	}
+	exit(1);
 }

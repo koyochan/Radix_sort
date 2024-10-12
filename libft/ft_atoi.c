@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kotkobay <kotkobay@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kotkobay <kotkobay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 14:22:14 by kotkobay          #+#    #+#             */
-/*   Updated: 2023/10/04 19:57:47 by kotkobay         ###   ########.fr       */
+/*   Updated: 2024/10/11 19:10:52 by kotkobay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,15 +41,3 @@ int	ft_atoi(const char *str)
 	}
 	return ((int)result * sign);
 }
-
-/* int	main(void)
-{
-	int ft_res;
-	int res;
-
-	ft_res = ft_atoi("9223372036854775807");
-	res = atoi("9223372036854775807");
-	printf("  ft_atoi: %d\n", ft_res);
-	printf("  atoi: %d\n", res);
-	return (0);
-} */

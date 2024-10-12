@@ -1,7 +1,7 @@
 #!/bin/bash
 
-minimum=0
-max=1000
+minimum=-20000
+max=100000
 size=500
 ARG=$(seq $minimum  $max | shuf -n $size)
 

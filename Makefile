@@ -6,7 +6,7 @@
 #    By: kotkobay <kotkobay@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/13 20:29:00 by kotkobay          #+#    #+#              #
-#    Updated: 2024/10/10 16:22:52 by kotkobay         ###   ########.fr        #
+#    Updated: 2024/10/11 19:17:36 by kotkobay         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ LIBFT = $(LIBFT_DIR)/libft.a
 GNL_DIR = gnl
 GNL = $(GNL_DIR)/get_next_line.a
 NAME = push_swap
-SRC = src/main.c src/move.c src/sort.c src/utils.c
+SRC = src/main.c src/move.c src/sort.c src/utils.c src/secound_utils.c
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)

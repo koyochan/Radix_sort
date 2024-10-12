@@ -6,7 +6,7 @@
 /*   By: kotkobay <kotkobay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 14:33:34 by kotkobay          #+#    #+#             */
-/*   Updated: 2024/10/09 19:16:26 by kotkobay         ###   ########.fr       */
+/*   Updated: 2024/10/11 19:10:32 by kotkobay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,32 +90,6 @@ char	*ft_new_save(char *save)
 	return (str);
 }
 
-// static void	validate_std(char *line)
-// {
-// 	int	i;
-// 	int	argc;
-
-// 	i = 0;
-// 	argc = 2;
-// 	printf("line:%s/\n", line);
-// 	while (line[i])
-// 	{
-// 		if (line[i] == ' ' || line[i] == '\t' || line[i] == '\r')
-// 		{
-// 			argc++;
-// 		}
-// 		printf("argc: %d %d\n", argc, i);
-// 		if (!(ft_isdigit(line[i])) && (line[i] != ' ' && line[i] != '\n'))
-// 		{
-// 			printf("line[i]: %c i: %d\n", line[i], i);
-// 			free_with_message(NULL, "Eroor\n");
-// 		}
-// 		i++;
-// 	}
-// 	if (argc < 3)
-// 		free_with_message(NULL, "");
-// }
-
 char	*get_next_line(int fd)
 {
 	char		*line;
@@ -130,35 +104,3 @@ char	*get_next_line(int fd)
 	save = ft_new_save(save);
 	return (line);
 }
-/* #include <fcntl.h>
-#include <stdio.h>
-
-int	main(void)
-{
-	char	*line;
-	int		i;
-	int		fd1;
-	int		fd2;
-	int		fd3;
-	fd1 = open("tests/test.txt", O_RDONLY);
-	fd2 = open("tests/test2.txt", O_RDONLY);
-	fd3 = open("tests/test3.txt", O_RDONLY);
-	i = 1;
-	while (i < 7)
-	{
-		line = get_next_line(fd1);
-		printf("line [%02d]: %s", i, line);
-		free(line);
-		line = get_next_line(fd2);
-		printf("line [%02d]: %s", i, line);
-		free(line);
-		line = get_next_line(fd3);
-		printf("line [%02d]: %s", i, line);
-		free(line);
-		i++;
-	}
-	close(fd1);
-	close(fd2);
-	close(fd3);
-	return (0);
-} */

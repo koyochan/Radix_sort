@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kotkobay <kotkobay@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kotkobay <kotkobay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 08:46:43 by kotkobay          #+#    #+#             */
-/*   Updated: 2023/09/22 07:34:25 by kotkobay         ###   ########.fr       */
+/*   Updated: 2024/10/11 19:11:09 by kotkobay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,22 +19,3 @@ int	ft_isalpha(int c)
 	else
 		return (0);
 }
-
-/* #include <ctype.h>
-#include <stdio.h>
-
-int	main(void)
-{
-	char	ch;
-
-	ch = 'A';
-	if (isalpha(ch))
-	{
-		printf("%c is an alphabet character\n", ch);
-	}
-	else
-	{
-		printf("%c is not an alphabet character\n", ch);
-	}
-	return (0);
-} */
