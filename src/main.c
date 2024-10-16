@@ -6,16 +6,11 @@
 /*   By: kotkobay <kotkobay@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/13 20:28:21 by kotkobay          #+#    #+#             */
-/*   Updated: 2024/10/11 23:38:18 by kotkobay         ###   ########.fr       */
+/*   Updated: 2024/10/16 11:01:46 by kotkobay         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/push_swap.h"
-
-__attribute__((destructor)) static void destructor()
-{
-	system("leaks -q push_swap");
-}
 
 static void	validate_single_arg(char *arg)
 {
