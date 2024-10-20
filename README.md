@@ -9,7 +9,7 @@
 	1.	git clone https://github.com/koyochan/Radix_sort
 	2.	make
 	3.	./push_swap "ランダムな数値"
-  4.  ./test_push_swap.sh　(test要件を実行できる。実行された命令は、output.txtにアウトプットされる)
+	4.	./test_push_swap.sh（テスト要件を実行し、実行された命令はoutput.txtに出力される）
 
 | 命令  | 説明   |
 |:-------------:|---------------|
